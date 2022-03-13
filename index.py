@@ -27,11 +27,10 @@ def getChildren(path, extensions: List[str]) -> List[str]:
     children
   )))
 
-assetsRootPath = sys.argv[1] if len(sys.argv) > 1 else os.getcwd()
-defaultImgExtensions = "gif,jpeg,jpg,png,webp"
-extensions = sys.argv[2] if len(sys.argv) > 2 else defaultImgExtensions
+rootPath = sys.argv[1] if len(sys.argv) > 1 else os.getcwd()
+extensions = sys.argv[2] if len(sys.argv) > 2 else "gif,jpeg,jpg,png,webp"
 
-children = getChildren(assetsRootPath, extensions.split(','))
+children = getChildren(rootPath, extensions.split(','))
 for c in children:
   print(c)
 
