@@ -1,6 +1,7 @@
 import sys
 import os
 from typing import List
+from template_builder import TemplateBuilder
 
 # Return True if the fiile/directory name starts with '.', False otherwise.
 def is_hidden(name: str) -> bool:
@@ -31,7 +32,9 @@ root_path = sys.argv[1] if len(sys.argv) > 1 else os.getcwd()
 extensions = sys.argv[2] if len(sys.argv) > 2 else "gif,jpeg,jpg,png,webp"
 
 children = get_children(root_path, extensions.split(','))
-for c in children:
-  print(c)
+template = TemplateBuilder(children).build()
 
+f = open("assets.html", "w")
+f.write(template)
+f.close()
 
