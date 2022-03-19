@@ -33,6 +33,9 @@ class TemplateBuilder:
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style type="text/css">
+          html {
+            background-image: url('./background.png');
+          }
           .item {
             overflow: hidden; 
             float: left; 
