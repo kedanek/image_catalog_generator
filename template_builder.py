@@ -63,6 +63,7 @@ class TemplateBuilder:
           .console__input {
             width: 240px;
             padding: 6px;
+            position: fixed;
           }
           .console__btn-group {
             position: fixed;
@@ -80,7 +81,7 @@ class TemplateBuilder:
           }
           .console__btn-group__btn--light-mode {
             background-image: url('./images/light_mode.svg');
-            background-color: #eee;
+            background-color: white;
           }
           .console__btn-group__btn--dark-mode {
             background-image: url('./images/dark_mode.svg');
