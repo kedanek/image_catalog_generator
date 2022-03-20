@@ -200,3 +200,11 @@ input.addEventListener('input', (e) => {
     render(filterMap, itemElemMap);
   });
 });
+
+const LIGHT_MODE_DATA_ATTR = "light";
+const lightModeBtn = document.getElementById('light-mode-btn');
+lightModeBtn.addEventListener('click', (e) => document.getRootNode().documentElement.dataset.mode = LIGHT_MODE_DATA_ATTR);
+
+const DARK_MODE_DATA_ATTR = "dark";
+const darkModeBtn = document.getElementById('dark-mode-btn');
+darkModeBtn.addEventListener('click', (e) => document.getRootNode().documentElement.dataset.mode = DARK_MODE_DATA_ATTR);
