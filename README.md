@@ -24,7 +24,7 @@ python3 index.py <DIRECTORY_TO_SEARCH>
 
 3. Open the generated catalog in a browser
 ```
-open assets.html
+open catalog.html
 ```
 
 ## How to contribute

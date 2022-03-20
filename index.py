@@ -34,7 +34,7 @@ extensions = sys.argv[2] if len(sys.argv) > 2 else "gif,jpeg,jpg,png,webp"
 children = get_children(root_path, extensions.split(','))
 template = TemplateBuilder(children).build()
 
-f = open("assets.html", "w")
+f = open("catalog.html", "w")
 f.write(template)
 f.close()
 
