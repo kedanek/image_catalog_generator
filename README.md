@@ -31,4 +31,4 @@ open catalog.html
 You can open an issue or send a pull request.
 
 ## License
-This software is available under WTFPL license.
+This program is released under GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
